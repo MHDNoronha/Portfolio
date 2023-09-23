@@ -1,13 +1,24 @@
+.tabs-container {
+  position: fixed;
+  top: 0; /* Position at the top */
+  right: 0; /* Position at the right */
+  background-color: #ffffff; /* Background color for the tabs container */
+  padding: 10px 20px; /* Add padding for spacing */
+  z-index: 999; /* Ensure it's above other content */
+}
+
 .tabs-underlined {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  align-items: center;
 }
 
 .tabs-underlined .tab-underlined {
   color: rgb(163, 29, 29);
   padding: 8px;
   margin: 8px;
-  opacity: .4;
+  opacity: 0.4;
   cursor: pointer;
   text-decoration: none;
   border-bottom: 4px solid transparent;
