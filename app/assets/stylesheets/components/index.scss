@@ -9,7 +9,7 @@
   font-family: "Courier Prime", monospace;
 }
 body {
-  background-color: #fdfdfe;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   min-height: 100vh;
@@ -21,7 +21,7 @@ body {
 .header .fixed {
   font-size: 70px;
   font-weight: 500;
-  color: #b393d3;
+  color: #69a7ce;
 }
 .header .typed{
   margin-left: 20px;
@@ -31,7 +31,7 @@ body {
 
 }
 .header .typed li{
-  color: #553c9a;
+  color: #3e3298;
   font-size: 70px;
   font-weight: 600;
   list-style: none;
@@ -54,7 +54,7 @@ body {
   width: 100%;
   left: 0;
   border-left: 2px solid #553c9a;
-  background: #fdfdfe;
+  background: #ffffff;
   animation: cursor 1s infinite step-end, typing 1.5s steps(8) infinite;
 }
 @keyframes cursor{
