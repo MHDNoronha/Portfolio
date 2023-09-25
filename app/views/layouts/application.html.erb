@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
   <%= stylesheet_link_tag 'components/index', media: 'all' %>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <%= javascript_importmap_tags %>
 </head>
 <body>
-  <img src="<%= asset_path('me.jpg') %>" alt="Matt Noronha" class="profile-image" width="937" height="1181">
-  <!-- Rest of your content here -->
+<!--   <img src="<%= asset_path('me.jpg') %>" alt="Matt Noronha" class="profile-image" width="937" height="1181">
+   Rest of your content here -->
     <%= yield %>
   <%= render 'shared/background' %>
   <%= render 'shared/footer' %> <!-- Render your footer here -->
@@ -20,5 +21,6 @@
 <%= render partial: 'cv' if @active_tab == 'cv' %>
 <%= render partial: 'projects' if @active_tab == 'projects' %>
 <%= render partial: 'shared/tabs' %>
+<%= render partial: 'shared/navbar' %>
 </body>
 </html>
