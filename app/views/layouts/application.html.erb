@@ -11,12 +11,14 @@
   <%= javascript_importmap_tags %>
 </head>
 <body>
+  <img src="<%= asset_path('me.jpg') %>" alt="Matt Noronha" class="profile-image" width="937" height="1181">
+  <!-- Rest of your content here -->
     <%= yield %>
   <%= render 'shared/background' %>
   <%= render 'shared/footer' %> <!-- Render your footer here -->
 <%= render partial: 'experience' if @active_tab == 'experience' %>
 <%= render partial: 'cv' if @active_tab == 'cv' %>
 <%= render partial: 'projects' if @active_tab == 'projects' %>
-<%= render partial: 'tabs_content' %>
+<%= render partial: 'shared/tabs' %>
 </body>
 </html>
