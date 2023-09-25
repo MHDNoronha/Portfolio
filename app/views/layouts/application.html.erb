@@ -7,11 +7,16 @@
   <%= csp_meta_tag %>
   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
   <%= stylesheet_link_tag 'components/index', media: 'all' %>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <%= javascript_importmap_tags %>
 </head>
 <body>
     <%= yield %>
+  <%= render 'shared/background' %>
   <%= render 'shared/footer' %> <!-- Render your footer here -->
-  <%= render 'shared/tabs' %>
+<%= render partial: 'experience' if @active_tab == 'experience' %>
+<%= render partial: 'cv' if @active_tab == 'cv' %>
+<%= render partial: 'projects' if @active_tab == 'projects' %>
+<%= render partial: 'tabs_content' %>
 </body>
 </html>
