@@ -1,0 +1,22 @@
+.navbar-lewagon {
+  justify-content: space-between;
+  background: #CFDEE7;
+  padding: 5px 10px; /* Adjust top and side padding */
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 30px; /* Adjust the width of the brand/logo */
+}
+
+.navbar-lewagon .navbar-toggler {
+  padding: 0.25rem 0.5rem; /* Adjust padding for the toggler button */
+  font-size: 14px; /* Adjust the font size for the toggler button */
+}
+
+.navbar-lewagon .nav-link {
+  font-size: 14px; /* Adjust the font size for links */
+}
