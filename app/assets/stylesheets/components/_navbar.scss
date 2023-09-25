@@ -20,3 +20,24 @@
 .navbar-lewagon .nav-link {
   font-size: 14px; /* Adjust the font size for links */
 }
+
+/* Specific selector */
+ul.navbar-nav li.nav-item a.nav-link {
+  font-size: 16px;
+  color: #594236;
+  padding: 10px 20px;
+  line-height: 30px; /* Set a fixed line height */
+  font-family: "Courier Prime", monospace;
+}
+
+/* Active tab */
+ul.navbar-nav li.nav-item.active a.nav-link {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+ul.navbar-nav li.nav-item a.nav-link:hover {
+  font-size: 18px; /* Increase font size on hover */
+  transition: 0.5s;
+  color: #FC9F5B;
+}
