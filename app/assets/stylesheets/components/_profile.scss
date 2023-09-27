@@ -2,10 +2,11 @@
   width: 300px; /* Adjust the size as needed */
   height: 400px; /* Adjust the size as needed */
   border-radius: 10%; /* Makes the image circular */
-  border: 2px solid #256a6f; /* Optional: Add a white border */
+  border: 2px solid #FC9F5B; /* Optional: Add a white border */
   position: absolute;
-  top: 120px; /* Adjust the top position as needed */
-  left: 10px; /* Adjust the left position as needed */
+  display: grid;
+  right: 60px;
+  top: 140px;
   max-width: 100%;
   height: auto;
 }
