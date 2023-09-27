@@ -1,10 +1,16 @@
 <body>
-      <div class="header">
-        <div class="fixed">Matt Noronha</div>
-        <ul class="typed">
-          <li><span>Full</span></li>
-          <li><span>Stack</span></li>
-          <li><span>Developer</span></li>
-        </ul>
-      </div>
+  <div class="header">
+    <div class="fixed">Matt Noronha</div>
+    <ul class="typed">
+      <li><span>Full</span></li>
+      <li><span>Stack</span></li>
+      <li><span>Developer</span></li>
+    </ul>
+  </div>
+
+  <div class="container text-center mt-4">
+    <%= link_to download_cv_path, download: "Matthew_Noronha_CV.pdf" do %>
+      <i class="fas fa-cloud-download-alt"></i> Download CV
+    <% end %>
+  </div>
 </body>
