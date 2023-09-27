@@ -14,12 +14,13 @@
 body {
   background-color: #ffffff;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   min-height: 100vh;
   align-items: center;
 }
 .header{
   display: inline-flex;
+  margin-left: 40px;
 }
 .header .fixed {
   font-size: 70px;
@@ -66,7 +67,16 @@ body {
   50%{border-color: #594236;}
 }
 @keyframes typing{
-  100%{ left: 8ch;}
+  0%, /* Changed 100% to 0% */
+  25%, /* Added this keyframe */
+  75%, /* Added this keyframe */
+  100% { /* Changed 0% to 100% */
+    left: 0;
+  }
+  25%, /* Added this keyframe */
+  75% { /* Added this keyframe */
+    left: 8ch;
+}
 }
 @keyframes slide{
   100%{top:-270px}
