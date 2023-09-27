@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'contactme/index'
   get 'experience/index'
   get 'cv/index'
   get 'projects/index'
@@ -10,4 +11,6 @@ Rails.application.routes.draw do
   get '/projects', to: 'projects#index', as: 'projects'
   get '/download_cv', to: 'cv#download', as: 'download_cv'
   get '/experience', to: 'experience#index', as: 'experience'
+  get '/contactme', to: 'contact_me#index', as: 'contact_me'
+
 end
